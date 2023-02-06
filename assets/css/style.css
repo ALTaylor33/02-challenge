@@ -1,0 +1,133 @@
+
+:root {
+  --Sand: #ddddce;
+  --green: #268f3b;
+  --white: #ffffff;
+  --Light-grey: #363741;
+  --brown: #3f2c1b;
+}
+
+body {
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+  
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--white);
+  background-color: var(--Sand);
+}
+
+header {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+  background-color: black;
+  border-radius: 8px;
+}
+
+header h1 {
+  font: size 65px;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+ aside{
+  height: 100%;
+  width: 10%;
+  min-width: 100px;
+  position:absolute;
+  left: 0%;
+  padding-top: 20px;
+  padding-left: 1%;
+  background-color: rgb(117, 121, 122);
+  border-radius: 8px;
+
+  }
+ 
+  img{
+max-width: 100%;
+height: auto;
+}
+
+p{
+background-color: var(--green);
+text-align: center;
+padding:10px;
+border: 2px solid black;
+ }
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: black;
+}
+
+.project-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:center;
+}
+
+.project-column { 
+  flex: 1 0 100%;
+  padding: 70px;
+  transition: flex-basis 500ms linear;
+}
+
+
+.project-bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100%;
+  padding: 35px;
+  color: var(--Light-grey);
+  outline: 2px solid var(--white);
+  background-color: var(--brown);
+  outline-offset: -2px;
+}
+
+.project-bio .header {
+  position: relative;
+  margin: -3.5rem 0 1.5rem 0;
+  padding: 0.5rem 1rem;
+  background-color: var(--green);
+  color: var(--Light-grey);
+  border: 2px solid var(--white);
+  border-radius: 8px;
+  transition: all 0.5s linear;
+}
+
+
+.project-bio:hover,
+.project-bio:hover .header {
+  box-shadow: inset 0px 0px 20px var(--Light-grey), 0 0 15px var(--Light-grey);
+}
+.code-card .code-block {
+  flex-grow: 1;
+}
+
+@media screen and (min-width: 768px) {
+  
+  .project-column {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+
+@media screen and (min-width: 992px) {
+  header {
+    width: 75%;
+  }
+
+  .project-column {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
